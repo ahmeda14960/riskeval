@@ -1,0 +1,8 @@
+anthropic
+matplotlib
+numpy
+tqdm
+transformers
+torch
+ipdb
+pandas
