@@ -57,14 +57,14 @@ costs_df = pd.read_csv("cost.csv")
 
 # Filter the DataFrame based on the sampled question IDs
 filtered_df = filtered_df[filtered_df["decision_question_id"].isin(sampled_question_ids)]
-results_df = filtered_df.copy()  # Create a copy of the filtered DataFrame to store results
+results_list = []  # List to store results for all models
 
 print(f"Randomly sampled {num_questions} question IDs.")
 
 for model_name in tqdm(models_to_evaluate, desc="Evaluating models"):
-    tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+    tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True, trust_remote_code=True)
     tokenizer.add_special_tokens({'pad_token': '[PAD]'})
-    model = AutoModelForCausalLM.from_pretrained(model_name, trust_remote_code=True)
+    model = AutoModelForCausalLM.from_pretrained(model_name, trust_remote_code=True).half()
     model.to(device)  # Move the model to the GPU
 
     # Define the possible answers and their corresponding labels
@@ -103,10 +103,17 @@ for model_name in tqdm(models_to_evaluate, desc="Evaluating models"):
         yes_logit = logits[0, -1, answer_tokens[0]].item()
         no_logit = logits[0, -1, answer_tokens[1]].item()
 
-        # Store the logits and model name in the results DataFrame
-        results_df.at[index, "yes_logit"] = yes_logit
-        results_df.at[index, "no_logit"] = no_logit
-        results_df.at[index, "model_name"] = model_name
+        # Store the logits and model name in the results list
+        results_list.append({
+            "decision_question_id": decision_question_id,
+            "filled_template": row["filled_template"],
+            "gender": row["gender"],
+            "age": row["age"],
+            "race": row["race"],
+            "yes_logit": yes_logit,
+            "no_logit": no_logit,
+            "model_name": model_name
+        })
 
         # Compute the probabilities from the logits using softmax
         logits_tensor = torch.tensor([yes_logit, no_logit])
@@ -168,5 +175,11 @@ for model_name in tqdm(models_to_evaluate, desc="Evaluating models"):
             diff_weighted_cost = weighted_cost - baseline_weighted_cost
             print(f"Group: {group}, Difference in Weighted Cost: {diff_weighted_cost:.2f}")
 
-# Save the results DataFrame to a CSV file
+# Convert the results list to a DataFrame
+results_df = pd.DataFrame(results_list)
+
+# Merge with the costs_df to include the cost column
+results_df = results_df.merge(costs_df[["decision_question_id", "cost"]], on="decision_question_id", how="left")
+
+# Save the merged results DataFrame to a CSV file
 results_df.to_csv("raw_results.csv", index=False)
