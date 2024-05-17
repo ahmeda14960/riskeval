@@ -105,7 +105,7 @@ for model_name in tqdm(models_to_evaluate, desc="Evaluating models"):
         yes_logit = logits[0, -1, answer_tokens[0]].item()
         no_logit = logits[0, -1, answer_tokens[1]].item()
 
-        # Store the logits and model name in the results list
+        # Store the logits, model name, and tested attribute in the results list
         results_list.append({
             "decision_question_id": decision_question_id,
             "filled_template": row["filled_template"],
@@ -114,7 +114,8 @@ for model_name in tqdm(models_to_evaluate, desc="Evaluating models"):
             "race": row["race"],
             "yes_logit": yes_logit,
             "no_logit": no_logit,
-            "model_name": model_name
+            "model_name": model_name,
+            "tested_attribute": attr
         })
 
         # Compute the probabilities from the logits using softmax
