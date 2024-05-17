@@ -15,7 +15,9 @@ models_to_evaluate = [
     "meta-llama/Meta-Llama-3-8B-Instruct",
     "meta-llama/Meta-Llama-3-8B",
     "mistralai/Mistral-7B-Instruct-v0.2",
-    "01-ai/Yi-1.5-9B-Chat"
+    "01-ai/Yi-1.5-9B-Chat",
+    "tiiuae/falcon-11B",
+    "microsoft/Phi-3-mini-128k-instruct",
     # Add more models here
 ]
 
