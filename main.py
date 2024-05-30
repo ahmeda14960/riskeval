@@ -170,4 +170,4 @@ for group, weighted_cost in group_weighted_cost.items():
         print(f"Group: {group}, Difference in Weighted Cost: {diff_weighted_cost:.2f}")
 
 # Save the merged results DataFrame to a CSV file
-results_df.to_csv("raw_results.csv", index=False)
+results_df.to_csv("raw_results.csv", mode='a', header=not os.path.exists("raw_results.csv"), index=False)
