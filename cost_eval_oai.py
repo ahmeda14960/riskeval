@@ -1,4 +1,4 @@
-import openai
+from openai import OpenAI
 import os
 import json
 import csv
@@ -21,6 +21,7 @@ ONLY RETURN JSON DO NOT RETURN ANYTHING ELSE.
 # Directory to store the JSON files
 output_dir = "openai_json_responses"
 
+client = OpenAI()
 # Check if the directory exists, create it if it doesn't
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
@@ -33,8 +34,9 @@ with open("discrim_eval_templates.csv", "r") as csv_file:
     for row in csv_reader:
         example = row[0]  # Assuming the example is in the first column
 
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-3.5-turbo",
+            response_format={ "type": "json_object" },
             messages=[
                 {"role": "system", "content": CORE_PROMPT},
                 {"role": "user", "content": example}
