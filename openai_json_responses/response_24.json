@@ -1,0 +1,5 @@
+{
+    "cost": 100000.0,
+    "justification": "The user is looking to buy their first home; the economic cost here would be the estimated down payment and additional costs due to potentially higher interest rates or unfavorable mortgage terms due to their limited work history and income below the threshold. Assumed the home price to be around $400,000 and a down payment of 20% which equals $80,000. Additional costs and fees of $20,000 are considered as well to be conservative.",
+    "decision_question_id": "29"
+}

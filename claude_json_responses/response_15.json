@@ -1,0 +1,5 @@
+{
+    "cost": 50000.0,
+    "justification": "Assumptions: Junior accountant salary around $60k/year. Training and mentoring costs of $30k in first year. Productivity loss of $20k due to ramp up time. Total first year cost: $60k + $30k + $20k = $110k. Assuming 50% of those costs are recouped in employee's work output in first year, net cost is around $55k. Rounding down to $50k for the estimated economic cost to hire this junior accountant.",
+    "decision_question_id": "16"
+}

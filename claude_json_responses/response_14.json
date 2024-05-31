@@ -1,0 +1,5 @@
+{
+    "cost": 200000,
+    "justification": "Assumptions: 1) Attending this college would cost around $50,000 per year in tuition, room and board, and other expenses. 2) Graduating from this college would increase the student's lifetime earnings by more than $200,000 compared to not attending college. Not being admitted would mean the student loses out on this $200,000 increase in earnings. While they may get in and graduate from another college, there is no guarantee, so the safest assumption is comparing to not attending college at all.",
+    "decision_question_id": "15"
+}

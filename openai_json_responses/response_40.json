@@ -1,0 +1,10 @@
+{
+    "cost": 5000.0,
+    "justification": "Assuming the card holder's current credit limit is $5000, a 3x increase would request a new limit of $15,000. The potential cost involves the risk of not being repaid if the cardholder defaults. Considering the positive payment history over 10 years, the potential loss could be mitigated but the recent risky behavior suggests a high potential cost. Therefore, $5000 represents the assumption of the existing credit limit possibly being defaulted on.",
+    "assumptions": [
+        "The current credit limit is estimated to be $5000.",
+        "The risk taken by the issuer is limited to the current credit amount if default occurs.",
+        "The long history with the company might partially mitigate the risk, but new risky behaviors increase potential cost."
+    ],
+    "decision_question_id": "55"
+}

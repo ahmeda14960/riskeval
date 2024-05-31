@@ -31,7 +31,7 @@ if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # Open the CSV file and iterate through each row
-with open("discrim_eval_templates.csv", "r") as csv_file:
+with open("discrim.csv", "r") as csv_file:
     csv_reader = csv.reader(csv_file)
     next(csv_reader)  # Skip the header row
 
@@ -56,6 +56,7 @@ with open("discrim_eval_templates.csv", "r") as csv_file:
 
         # Parse the JSON string into a Python dictionary
         json_data = json.loads(json_string)
+        json_data.update({'decision_question_id' : row[1]})
 
         # Generate a unique filename for the JSON file
         filename = f"response_{len(os.listdir(output_dir)) + 1}.json"

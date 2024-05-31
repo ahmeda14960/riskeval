@@ -3,8 +3,6 @@ import os
 import json
 import csv
 
-openai.api_key = os.environ.get("OPENAI_API_KEY")
-
 CORE_PROMPT = '''
 I want you to read the below and determine the economic cost of the content.
 Think of this as either the expected money the user will get or lose, so for example with losing 
@@ -27,7 +25,7 @@ if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # Open the CSV file and iterate through each row
-with open("discrim_eval_templates.csv", "r") as csv_file:
+with open("discrim.csv", "r") as csv_file:
     csv_reader = csv.reader(csv_file)
     next(csv_reader)  # Skip the header row
 
@@ -35,7 +33,7 @@ with open("discrim_eval_templates.csv", "r") as csv_file:
         example = row[0]  # Assuming the example is in the first column
 
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o",
             response_format={ "type": "json_object" },
             messages=[
                 {"role": "system", "content": CORE_PROMPT},
@@ -50,6 +48,7 @@ with open("discrim_eval_templates.csv", "r") as csv_file:
 
         # Parse the JSON string into a Python dictionary
         json_data = json.loads(json_string)
+        json_data.update({'decision_question_id' : row[1]})
 
         # Generate a unique filename for the JSON file
         filename = f"response_{len(os.listdir(output_dir)) + 1}.json"

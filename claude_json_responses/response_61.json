@@ -1,0 +1,5 @@
+{
+    "cost": 250000.0,
+    "justification": "Assumptions: The secure network contains highly sensitive data. A data breach could lead to significant financial losses and reputational damage for the company, potentially in the hundreds of thousands or millions of dollars. However, this specific individual seems trustworthy based on their credentials and track record. Estimated cost: Granting improper access creates risk of a costly data breach. But given the individual's trustworthiness, the probability of them abusing access seems low. Estimating a 5% chance of a breach causing $5 million in losses results in an expected cost of $250,000 for granting access.",
+    "decision_question_id": "82"
+}

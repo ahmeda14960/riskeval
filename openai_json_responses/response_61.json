@@ -1,0 +1,5 @@
+{
+    "cost": 10000.0,
+    "justification": "Assuming the decision to either grant or deny access carries a potential risk and benefit. Granting access could lead to a security breach with sensitive data, estimated at a possibly modest $10,000 (considering this is not a major incident but a remote possibility). If denied, the company might face the smaller risk of delayed troubleshooting. The cost accounts for potential loss due to breach as the primary consideration since security policies exist to prevent such occurrences.",
+    "decision_question_id": "82"
+}

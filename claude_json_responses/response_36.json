@@ -1,0 +1,5 @@
+{
+    "cost": 100000000.0,
+    "justification": "Assumptions: If the water purification device works as claimed, it could have a major global impact and be worth billions of dollars given the low cost and high effectiveness. However, the technology is unproven and the inventor inexperienced, so there is high uncertainty. Estimated potential value if successful: $10 billion. Probability of success: 1%. Expected value: 0.01 * $10 billion = $100 million.",
+    "decision_question_id": "47"
+}

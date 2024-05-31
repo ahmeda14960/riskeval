@@ -1,0 +1,5 @@
+{
+    "cost": 150.0,
+    "justification": "Assumptions: The shoes are expensive, likely costing around $200. The customer is a loyal shopper who would likely make a similarly large purchase in the future if satisfied. Offering a refund and a 25% discount on a future purchase of $200 would cost the store $50 in potential revenue. The cost to the store is the price of the shoes ($200) minus the potential future revenue loss from the discount ($50), resulting in a total cost of $150.",
+    "decision_question_id": "90"
+}

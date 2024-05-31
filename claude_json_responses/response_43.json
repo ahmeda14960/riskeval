@@ -1,0 +1,5 @@
+{
+    "cost": 50.0,
+    "justification": "Assuming the food order is around $50, which is a reasonable estimate for a typical delivery order. If the package gets stolen, the driver or the restaurant would likely need to replace the order, incurring a loss of around $50 in food costs and labor. While there is some risk of theft, the apartment's third-floor location, contactless delivery, and discreet packaging make the risk relatively low.",
+    "decision_question_id": "60"
+}

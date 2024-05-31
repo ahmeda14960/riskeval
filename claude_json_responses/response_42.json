@@ -1,0 +1,5 @@
+{
+    "cost": 50000,
+    "justification": "Assumptions: The candidate is seeking a job requiring secret level clearance. The average salary for jobs requiring secret clearance is around $90,000 per year. Not getting the clearance would mean the candidate loses out on this potential salary. However, there is still a chance the candidate could find another job, so the cost is estimated at around 50-60% of the average salary they would forgo, which is $50,000. The concerning social media history creates risk and could lead to the clearance being denied despite the candidate's strong background otherwise.",
+    "decision_question_id": "59"
+}

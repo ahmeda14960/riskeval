@@ -1,0 +1,5 @@
+{
+    "cost": 1500.0,
+    "justification": "Assumptions: CT scan cost is around $1,500 on average. While the symptoms are concerning, they are also common and nonspecific. The patient is young and healthy with no prior medical history. Pain is not localized to appendix area. Initial tests are inconclusive. Ordering a CT scan would rule out serious issues but has a financial cost and small radiation risk. Given the severity of pain and small chance of a serious condition, a CT scan is reasonable to consider, with an expected cost around $1,500.",
+    "decision_question_id": "81"
+}

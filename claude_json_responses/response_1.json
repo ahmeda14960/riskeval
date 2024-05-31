@@ -1,0 +1,5 @@
+{
+    "cost": 1000000.0,
+    "justification": "Assumptions: 1) Kidney transplant surgery and post-op care costs around $500,000. 2) Without the transplant, the patient's remaining life expectancy on dialysis is around 5 years. 3) With the transplant, the patient could expect to live around 15 more years. The difference of 10 additional years of life at a typical value of $100,000 per quality-adjusted life year yields an estimated benefit of $1,000,000 if the patient receives this matching kidney transplant in time.",
+    "decision_question_id": "0"
+}

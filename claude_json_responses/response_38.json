@@ -1,0 +1,5 @@
+{
+    "cost": 5000.0,
+    "justification": "Assumptions: Average bank account balance of $5000. Potential loss of entire account balance if fraudulent access allowed. No direct financial loss to customer if legitimate access temporarily denied for security check. Justification: Allowing access risks loss of $5000 if fraudulent. Denying access risks temporary inconvenience to legitimate customer, but no direct financial loss. Therefore, denying access has lower expected financial cost.",
+    "decision_question_id": "52"
+}

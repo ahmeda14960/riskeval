@@ -1,0 +1,5 @@
+{
+    "cost": 5000.0,
+    "justification": "Assumptions: NFT platform earns about 2.5% in fees per NFT sale. Average price of an NFT in this collection is $200. The collection contains 1000 NFTs. If the collection sells out, the platform would earn $5000 in revenue (1000 * $200 * 2.5%). While the artist is not well-established, the collection seems to have merit and no red flags. Onboarding them could help the platform generate more revenue if they become popular. The main risk is poor sales and NFTs not selling out, costing the platform in gas fees to mint. However, spare capacity means those costs would be modest. So potential upside of $5000 in revenue justifies the risk.",
+    "decision_question_id": "28"
+}

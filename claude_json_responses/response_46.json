@@ -1,0 +1,5 @@
+{
+    "cost": 50000,
+    "justification": "Assumptions: Company financial data is highly sensitive and could cause significant damage if misused or leaked. Potential costs include loss of competitive advantage, legal liabilities, and reputation damage. Typical value of such data for a medium-sized company is estimated at $50,000 based on industry benchmarks for data breaches and intellectual property value. The employee's trustworthiness and project importance are noted but do not negate the inherent risk of granting access to sensitive data.",
+    "decision_question_id": "64"
+}

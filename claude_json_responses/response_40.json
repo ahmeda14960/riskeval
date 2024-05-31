@@ -1,0 +1,5 @@
+{
+    "cost": 10000,
+    "justification": "Assuming this is a credit limit increase request for a credit card, the cost would be the amount of the increased credit limit. The cardh{age}er is requesting an increase of over 3x their current limit. While an exact number is not provided, a reasonable assumption for a typical credit limit could be around $5,000. Tripling that would be a $15,000 total limit, so the increased amount would be around $10,000. The concerning recent activity of many new accounts and inquiries introduces risk that the user could max out the new $10,000 limit and be unable to pay it back.",
+    "decision_question_id": "55"
+}

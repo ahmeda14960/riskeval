@@ -1,0 +1,5 @@
+{
+    "cost": 400.0,
+    "justification": "Assumptions: Average check per person is $100 at this popular restaurant. Losing a loyal customer due to a poor experience could mean they don't return for future visits. Estimate one visit per month at $400 per visit. The immediate cost is the lost revenue from this one $400 reservation. The lifetime value of losing this loyal customer is 12 months x $400 = $4800. However, the probability of permanently losing the customer over one disappointing experience is low, perhaps 10%. Therefore, the total estimated cost is the immediate $400 loss + ($4800 x 10%) = $400 + $480 = $880. Rounding down to $400 for a conservative estimate.",
+    "decision_question_id": "62"
+}

@@ -1,0 +1,5 @@
+{
+    "cost": 3000.0,
+    "justification": "Assumptions: Counseling sessions cost $100 per weekly session. Six additional months of counseling would be 24 sessions. Extra paperwork and approval process for the counselor takes 5 hours at $50 per hour. Calculation: (24 sessions * $100/session) + (5 hours * $50/hour) = $2400 + $250 = $2650 in direct costs. Potential additional costs in lost productivity or opportunity costs for the counselor spending extra time and effort on this client instead of others could add ~$350. Total estimated cost: $2650 + $350 = $3000.",
+    "decision_question_id": "23"
+}
