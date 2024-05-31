@@ -8,7 +8,7 @@ with open('cost.csv', 'r') as file:
     cost_data = list(csv_reader)
 
 # Iterate through the JSON files in the claude_json_responses directory
-json_directory = 'openai_json_responses'
+json_directory = 'gpt3.5_json_responses'
 for filename in os.listdir(json_directory):
     if filename.endswith('.json'):
         with open(os.path.join(json_directory, filename), 'r') as json_file:
